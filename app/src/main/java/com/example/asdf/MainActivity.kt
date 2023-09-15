@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         findViewById<Button>(R.id.Zatwierdz).setOnClickListener{
             findViewById<TextView>(R.id.Wynik).text =
-                (findViewById<TextInputLayout>(R.id.Imie).text) + (findViewById<TextInputLayout>(R.id.Nazwisko).text)
+                (findViewById<TextInputEditText>(R.id.Imie).text.toString()) + (findViewById<TextInputEditText>(R.id.Nazwisko).text.toString())
 
         }
     }
